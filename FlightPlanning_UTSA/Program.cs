@@ -62,11 +62,14 @@ namespace FlightPlanning_UTSA
             Zlin.calculateMassArmS();
             Zlin.calculateTotalArm();
 
-            String[] message = {    "Total Mass: " + Zlin.total_Mass.ToString(),
-                                    "Total Arm: " + Zlin.total_Arm,
-                                    "Total MassArm: " + Zlin.total_MassArm};
+            String[] message = {    "   Mass    |   Arm    |    MassArm",
+                                    "   " + Zlin.BEM_Mass + "   |   " + Zlin.BEM_Arm + "    |   " + Zlin.BEM_MassArm,
+                                    "   " + Zlin.LeftSeat_Mass + "   |   " + Zlin.LeftSeat_Arm + "    |   " + Zlin.LeftSeat_MassArm
 
-            Display(message);
+                                    };
+            //Display(message);
+
+            MakeTable();
         }
 
         public double AskUser(string question) {
@@ -74,7 +77,6 @@ namespace FlightPlanning_UTSA
 
             Console.WriteLine(question);
             answer = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine(answer);
 
             return answer;
         }
@@ -85,6 +87,63 @@ namespace FlightPlanning_UTSA
                 Console.WriteLine(value.ToString());
             }
 
+        }
+
+        static int tableWidth = 73;
+
+        public void MakeTable()
+        {
+            Console.Clear();
+            PrintLine();
+            PrintRow("", "Mass", "Arm", "MassArm");
+            PrintLine();
+            PrintRow("Basic Empty Mass", Zlin.BEM_Mass.ToString(), Zlin.BEM_Arm.ToString(), Zlin.BEM_MassArm.ToString());
+            PrintLine();
+            PrintRow("Left Seat", Zlin.LeftSeat_Mass.ToString(), Zlin.LeftSeat_Arm.ToString(), Zlin.LeftSeat_MassArm.ToString());
+            PrintLine();
+            PrintRow("Right Seat", Zlin.RightSeat_Mass.ToString(), Zlin.RightSeat_Arm.ToString(), Zlin.RightSeat_MassArm.ToString());
+            PrintLine();
+            PrintRow("Main Tank", Zlin.FuelMain_Mass.ToString(), Zlin.FuelMain_Arm.ToString(), Zlin.FuelMain_MassArm.ToString());
+            PrintLine();
+            PrintRow("Auxiliary Tank", Zlin.FuelAux_Mass.ToString(), Zlin.FuelAux_Arm.ToString(), Zlin.FuelAux_MassArm.ToString());
+            PrintLine();
+            PrintRow("Baggage", Zlin.Baggage_Mass.ToString(), Zlin.Baggage_Arm.ToString(), Zlin.Baggage_MassArm.ToString());
+            PrintLine();
+            PrintLine();
+            PrintRow("Total Takeoff Mass", Zlin.total_Mass.ToString(), Zlin.total_Arm.ToString(), Zlin.total_MassArm.ToString());
+            Console.ReadLine();
+        }
+
+        static void PrintLine()
+        {
+            Console.WriteLine(new string('-', tableWidth));
+        }
+
+        static void PrintRow(params string[] columns)
+        {
+            int width = (tableWidth - columns.Length) / columns.Length;
+            string row = "|";
+
+            foreach (string column in columns)
+            {
+                row += AlignCentre(column, width) + "|";
+            }
+
+            Console.WriteLine(row);
+        }
+
+        static string AlignCentre(string text, int width)
+        {
+            text = text.Length > width ? text.Substring(0, width - 3) + "..." : text;
+
+            if (string.IsNullOrEmpty(text))
+            {
+                return new string(' ', width);
+            }
+            else
+            {
+                return text.PadRight(width - (width - text.Length) / 2).PadLeft(width);
+            }
         }
 
 

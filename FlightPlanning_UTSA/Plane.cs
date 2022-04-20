@@ -59,8 +59,6 @@ namespace FlightPlanning_UTSA
 
             BEM_MassArm = BEM_Mass * BEM_Arm;
             total_MassArm += BEM_MassArm;
-            Console.WriteLine(BEM_MassArm);
-            Console.WriteLine(total_MassArm);
 
             LeftSeat_MassArm = LeftSeat_Mass * LeftSeat_Arm;
             total_MassArm += LeftSeat_MassArm;
@@ -76,10 +74,12 @@ namespace FlightPlanning_UTSA
 
             Baggage_MassArm = Baggage_Mass * Baggage_Arm;
             total_MassArm += Baggage_MassArm;
+            total_MassArm = Math.Round(total_MassArm, 2);
         }
 
         public void calculateTotalArm() {
             total_Arm = total_MassArm / total_Mass;
+            total_Arm = Math.Round(total_Arm, 2);
         }
 
     }
