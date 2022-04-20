@@ -54,9 +54,13 @@ namespace FlightPlanning_UTSA
         }
 
         public void calculateMassArmS() {
-            
+
+            Console.WriteLine("Starter CalcMassArms");
+
             BEM_MassArm = BEM_Mass * BEM_Arm;
             total_MassArm += BEM_MassArm;
+            Console.WriteLine(BEM_MassArm);
+            Console.WriteLine(total_MassArm);
 
             LeftSeat_MassArm = LeftSeat_Mass * LeftSeat_Arm;
             total_MassArm += LeftSeat_MassArm;

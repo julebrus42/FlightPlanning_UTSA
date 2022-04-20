@@ -36,6 +36,7 @@ namespace FlightPlanning_UTSA
             double response;
 
             response = AskUser("Basic empty mass:");
+            Zlin.BEM_Mass = response;
             Zlin.addToTotalMass(response);
 
             response = AskUser("Left Seat mass:");
