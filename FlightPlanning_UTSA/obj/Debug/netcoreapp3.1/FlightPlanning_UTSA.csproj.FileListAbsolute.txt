@@ -1,0 +1,13 @@
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\bin\Debug\netcoreapp3.1\FlightPlanning_UTSA.exe
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\bin\Debug\netcoreapp3.1\FlightPlanning_UTSA.deps.json
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\bin\Debug\netcoreapp3.1\FlightPlanning_UTSA.runtimeconfig.json
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\bin\Debug\netcoreapp3.1\FlightPlanning_UTSA.runtimeconfig.dev.json
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\bin\Debug\netcoreapp3.1\FlightPlanning_UTSA.dll
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\bin\Debug\netcoreapp3.1\FlightPlanning_UTSA.pdb
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.csprojAssemblyReference.cache
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.AssemblyInfoInputs.cache
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.AssemblyInfo.cs
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.csproj.CoreCompileInputs.cache
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.dll
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.pdb
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.genruntimeconfig.cache
