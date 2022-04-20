@@ -14,12 +14,12 @@ namespace FlightPlanning_UTSA
             bool run = true;
             
             while(run) {
-                program.runProgram();
+                program.RunProgram();
             }
         }
 
 
-        public void runProgram() {
+        public void RunProgram() {
 
                 addPlanes();
 
@@ -35,26 +35,26 @@ namespace FlightPlanning_UTSA
         public void weightAndBalance() {
             double response;
 
-            response = askUser("Basic empty mass:");
+            response = AskUser("Basic empty mass:");
             Zlin.addToTotalMass(response);
 
-            response = askUser("Left Seat mass:");
+            response = AskUser("Left Seat mass:");
             Zlin.LeftSeat_Mass = response;
             Zlin.addToTotalMass(response);
 
-            response = askUser("Right Seat mass:");
+            response = AskUser("Right Seat mass:");
             Zlin.RightSeat_Mass = response;
             Zlin.addToTotalMass(response);
 
-            response = askUser("Main FuelTank mass:");
+            response = AskUser("Main FuelTank mass:");
             Zlin.FuelMain_Mass = response;
             Zlin.addToTotalMass(response);
 
-            response = askUser("Auxilary FuelTank mass:");
+            response = AskUser("Auxilary FuelTank mass:");
             Zlin.FuelAux_Mass = response;
             Zlin.addToTotalMass(response);
 
-            response = askUser("Baggage mass:");
+            response = AskUser("Baggage mass:");
             Zlin.Baggage_Mass = response;
             Zlin.addToTotalMass(response);
 
@@ -68,7 +68,7 @@ namespace FlightPlanning_UTSA
             Display(message);
         }
 
-        public double askUser(string question) {
+        public double AskUser(string question) {
             double answer;
 
             Console.WriteLine(question);
