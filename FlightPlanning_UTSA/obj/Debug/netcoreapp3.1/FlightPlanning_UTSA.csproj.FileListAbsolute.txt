@@ -11,3 +11,7 @@ S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\Flight
 S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.dll
 S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.pdb
 S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.genruntimeconfig.cache
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+S:\Github\FlightPlanning_UTSA\FlightPlanning_UTSA\obj\Debug\netcoreapp3.1\FlightPlanning_UTSA.csproj.CopyComplete
